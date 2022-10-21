@@ -1,9 +1,8 @@
 ---
 k3s_version: v1.24.6+k3s1
 # this is the user that has ssh access to these machines
-ansible_user: anuser
+ansible_user: kubadmin
 systemd_dir: /etc/systemd/system
-#ansible_password: "Test1234" #not working
 
 # Set your timezone
 #system_timezone: "Your/Timezone"
@@ -16,7 +15,7 @@ apiserver_endpoint: "192.168.2.50"
 
 # k3s_token is required  masters can talk together securely
 # this token should be alpha numeric only
-k3s_token: "this-is-my-supper-pass"
+k3s_token: "some-SUPER-DEDEUPER-secret-password"
 
 # The IP on which the node is reachable in the cluster.
 # Here, a sensible default is provided, you can still override
@@ -49,4 +48,4 @@ metal_lb_speaker_tag_version: "v0.13.6"
 metal_lb_controller_tag_version: "v0.13.6"
 
 # metallb ip range for load balancer
-metal_lb_ip_range: "192.168.2.31-192.168.2.33"
+metal_lb_ip_range: "192.168.2.31-192.168.2.34"
