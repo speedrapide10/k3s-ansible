@@ -2,8 +2,8 @@
 k3s_version: v1.24.6+k3s1
 # this is the user that has ssh access to these machines
 ansible_user: anuser
-ansible_password: "Test1234"
 systemd_dir: /etc/systemd/system
+#ansible_password: "Test1234" #not working
 
 # Set your timezone
 #system_timezone: "Your/Timezone"
