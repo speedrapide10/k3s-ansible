@@ -11,7 +11,7 @@ system_timezone: "Your/Timezone"
 flannel_iface: "eth0"
 
 # apiserver_endpoint is virtual ip-address which will be configured on each master
-apiserver_endpoint: "192.168.30.222"
+apiserver_endpoint: "192.168.2.50"
 
 # k3s_token is required  masters can talk together securely
 # this token should be alpha numeric only
@@ -48,4 +48,4 @@ metal_lb_speaker_tag_version: "v0.13.6"
 metal_lb_controller_tag_version: "v0.13.6"
 
 # metallb ip range for load balancer
-metal_lb_ip_range: "192.168.30.80-192.168.30.90"
+metal_lb_ip_range: "192.168.2.31-192.168.2.33"
